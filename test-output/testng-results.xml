@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-10T21:06:34 IST" name="Default suite" finished-at="2023-03-10T21:06:54 IST" duration-ms="20608">
+    <groups>
+    </groups>
+    <test started-at="2023-03-10T21:06:34 IST" name="Default test" finished-at="2023-03-10T21:06:54 IST" duration-ms="20608">
+      <class name="keyWordDrivenTest.CarHomeLoanEMI_Test">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:keyWordDrivenTest.CarHomeLoanEMI_Test@4b0d79fc]" started-at="2023-03-10T21:06:34 IST" name="beforeTest" finished-at="2023-03-10T21:06:40 IST" duration-ms="6491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="carHomeLoanEMI_Test1()[pri:0, instance:keyWordDrivenTest.CarHomeLoanEMI_Test@4b0d79fc]" started-at="2023-03-10T21:06:40 IST" name="carHomeLoanEMI_Test1" finished-at="2023-03-10T21:06:54 IST" duration-ms="13673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carHomeLoanEMI_Test1 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:keyWordDrivenTest.CarHomeLoanEMI_Test@4b0d79fc]" started-at="2023-03-10T21:06:54 IST" name="afterTest" finished-at="2023-03-10T21:06:54 IST" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- keyWordDrivenTest.CarHomeLoanEMI_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
