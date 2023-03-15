@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute">
+      <class name="Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest">
         <methods>
-          <include name="LoginAdminTest"/>
-          <include name="LogintuserTest"/>
-          <include name="LoginInvalidTest"/>
-          <include name="afterTest"/>
+          <include name="f"/>
           <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute -->
+      </class> <!-- Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
