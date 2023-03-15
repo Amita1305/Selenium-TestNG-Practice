@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 
 public class LoginTestCaseAttribute 
@@ -15,8 +16,10 @@ public class LoginTestCaseAttribute
 	 @BeforeTest
 	  public void beforeTest() 
 	 {
-		 w=new ChromeDriver();
-	  }
+		 ChromeOptions co=new ChromeOptions();
+		  co.addArguments("--remote-allow-origins=*");
+		  w=new ChromeDriver(co);
+	 }
 
   @Test(priority=0, description="Test case to verify Admin credential", groups="LoginModule")
   public void LoginAdminTest() 
@@ -45,7 +48,7 @@ public class LoginTestCaseAttribute
 	  w.findElement(By.id("uid")).sendKeys("Invalid");
 	  w.findElement(By.id("passw")).sendKeys("tuser");
 	  w.findElement(By.name("btnSubmit")).click();
-	;
+	
   }
 
  

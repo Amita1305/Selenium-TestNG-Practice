@@ -1,25 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-15T22:59:24 IST" name="Suite" finished-at="2023-03-15T22:59:30 IST" duration-ms="6056">
+  <suite started-at="2023-03-15T23:32:49 IST" name="Suite" finished-at="2023-03-15T23:33:09 IST" duration-ms="19151">
     <groups>
+      <group name="LoginModule">
+        <method signature="LoginTestCaseAttribute.LoginAdminTest()[pri:0, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" name="LoginAdminTest" class="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute"/>
+        <method signature="LoginTestCaseAttribute.LoginInvalidTest()[pri:2, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" name="LoginInvalidTest" class="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute"/>
+        <method signature="LoginTestCaseAttribute.LogintuserTest()[pri:1, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" name="LogintuserTest" class="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute"/>
+      </group> <!-- LoginModule -->
     </groups>
-    <test started-at="2023-03-15T22:59:24 IST" name="Test" finished-at="2023-03-15T22:59:30 IST" duration-ms="6056">
-      <class name="Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest@34f5090e]" started-at="2023-03-15T22:59:24 IST" name="beforeTest" finished-at="2023-03-15T22:59:28 IST" duration-ms="3966" status="PASS">
+    <test started-at="2023-03-15T23:32:49 IST" name="Test" finished-at="2023-03-15T23:33:09 IST" duration-ms="19151">
+      <class name="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" started-at="2023-03-15T23:32:49 IST" name="beforeTest" finished-at="2023-03-15T23:32:54 IST" duration-ms="4156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="f()[pri:0, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest@34f5090e]" started-at="2023-03-15T22:59:28 IST" name="f" finished-at="2023-03-15T22:59:29 IST" duration-ms="1220" status="PASS">
+        <test-method signature="LoginAdminTest()[pri:0, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" started-at="2023-03-15T23:32:54 IST" name="LoginAdminTest" description="Test case to verify Admin credential" finished-at="2023-03-15T23:32:57 IST" duration-ms="3504" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest@34f5090e]" started-at="2023-03-15T22:59:29 IST" name="afterTest" finished-at="2023-03-15T22:59:30 IST" duration-ms="797" status="PASS">
+        </test-method> <!-- LoginAdminTest -->
+        <test-method signature="LogintuserTest()[pri:1, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" started-at="2023-03-15T23:32:57 IST" name="LogintuserTest" description="Test case to verify tuser credential" finished-at="2023-03-15T23:33:00 IST" depends-on-methods="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute.LoginAdminTest" duration-ms="2852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogintuserTest -->
+        <test-method signature="LogintuserTest()[pri:1, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" started-at="2023-03-15T23:33:00 IST" name="LogintuserTest" description="Test case to verify tuser credential" finished-at="2023-03-15T23:33:03 IST" depends-on-methods="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute.LoginAdminTest" duration-ms="2766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogintuserTest -->
+        <test-method signature="LogintuserTest()[pri:1, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" started-at="2023-03-15T23:33:03 IST" name="LogintuserTest" description="Test case to verify tuser credential" finished-at="2023-03-15T23:33:06 IST" depends-on-methods="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute.LoginAdminTest" duration-ms="2868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogintuserTest -->
+        <test-method signature="LoginInvalidTest()[pri:2, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" started-at="2023-03-15T23:33:06 IST" name="LoginInvalidTest" description="Test case to verify Invalid credential" finished-at="2023-03-15T23:33:08 IST" depends-on-methods="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute.LoginAdminTest" duration-ms="2041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute@27ff5d15]" started-at="2023-03-15T23:33:08 IST" name="afterTest" finished-at="2023-03-15T23:33:09 IST" duration-ms="866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest -->
+      </class> <!-- Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
