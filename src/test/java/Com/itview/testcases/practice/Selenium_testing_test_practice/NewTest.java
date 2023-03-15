@@ -26,10 +26,14 @@ public class NewTest
   public void f() 
   {
 	  w.get("http://altoromutual.com:8080/login.jsp");
+	  String PageTitle=w.getTitle();
+	  System.out.println(PageTitle);
   }
 
   @AfterTest
-  public void afterTest() {
+  public void afterTest() 
+  {
+	  w.quit();
   }
 
 }
