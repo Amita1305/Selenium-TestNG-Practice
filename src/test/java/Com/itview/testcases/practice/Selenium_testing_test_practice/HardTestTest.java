@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
@@ -16,7 +17,10 @@ public class HardTestTest
 	 @BeforeTest
 	  public void beforeTest() 
 	 {
-		 w=new ChromeDriver();
+		 ChromeOptions co=new ChromeOptions();
+		  co.addArguments("--remote-allow-origins=*");
+		  w=new ChromeDriver(co);
+		 
 	 }
 
   @Test(priority=0,description="Test case to verify login page using 'Admin'user",groups="LoginModule")

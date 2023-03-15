@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest">
+      <class name="Com.itview.testcases.practice.Selenium_testing_test_practice.Code_For_Count_Elements">
         <methods>
-          <include name="f"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="Code_For_Count_Elements_Test"/>
         </methods>
-      </class> <!-- Com.itview.testcases.practice.Selenium_testing_test_practice.NewTest -->
+      </class> <!-- Com.itview.testcases.practice.Selenium_testing_test_practice.Code_For_Count_Elements -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
