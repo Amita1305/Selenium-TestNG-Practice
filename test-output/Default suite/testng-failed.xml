@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.test.NewTest">
+      <class name="Com.test.latest.NewTest1">
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="b"/>
         </methods>
-      </class> <!-- Com.test.NewTest -->
+      </class> <!-- Com.test.latest.NewTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

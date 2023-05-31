@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-28T20:04:43 IST" name="Default suite" finished-at="2023-05-28T20:05:01 IST" duration-ms="17686">
+  <suite started-at="2023-05-31T23:54:58 IST" name="Default suite" finished-at="2023-05-31T23:54:58 IST" duration-ms="59">
     <groups>
     </groups>
-    <test started-at="2023-05-28T20:04:43 IST" name="Default test" finished-at="2023-05-28T20:05:01 IST" duration-ms="17686">
-      <class name="Com.test.NewTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Com.test.NewTest@54a7079e]" started-at="2023-05-28T20:04:43 IST" name="beforeTest" finished-at="2023-05-28T20:04:48 IST" duration-ms="4120" status="PASS">
+    <test started-at="2023-05-31T23:54:58 IST" name="Default test" finished-at="2023-05-31T23:54:58 IST" duration-ms="59">
+      <class name="Com.test.latest.NewTest">
+        <test-method signature="f()[pri:0, instance:Com.test.latest.NewTest@6cd28fa7]" started-at="2023-05-31T23:54:58 IST" name="f" finished-at="2023-05-31T23:54:58 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="a()[pri:0, instance:Com.test.NewTest@54a7079e]" started-at="2023-05-28T20:04:48 IST" name="a" finished-at="2023-05-28T20:04:54 IST" duration-ms="6691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- a -->
-        <test-method signature="b()[pri:0, instance:Com.test.NewTest@54a7079e]" started-at="2023-05-28T20:04:54 IST" name="b" finished-at="2023-05-28T20:05:00 IST" duration-ms="5597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- b -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Com.test.NewTest@54a7079e]" started-at="2023-05-28T20:05:00 IST" name="afterTest" finished-at="2023-05-28T20:05:01 IST" duration-ms="1196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- Com.test.NewTest -->
+        </test-method> <!-- f -->
+      </class> <!-- Com.test.latest.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
