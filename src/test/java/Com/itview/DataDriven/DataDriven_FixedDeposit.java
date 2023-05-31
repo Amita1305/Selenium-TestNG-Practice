@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 
@@ -28,8 +29,11 @@ public class DataDriven_FixedDeposit
 	  
 	  @BeforeTest
 	  public void beforeTest()
-	  {
-		  w=new ChromeDriver();	
+	  {  
+		  ChromeOptions options=new ChromeOptions();
+		  options.addArguments("--remote-allow-origins=*");
+		  w=new ChromeDriver(options);	
+		  
 		  w.manage().window().maximize();
 	  }
 	 

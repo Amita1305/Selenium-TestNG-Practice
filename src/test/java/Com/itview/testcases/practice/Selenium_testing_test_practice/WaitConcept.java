@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -16,9 +17,10 @@ public class WaitConcept
 {
 	public static void main(String[] args) throws Exception
 	{
-	WebDriver w=new ChromeDriver();
-	
-	//w.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		ChromeOptions options=new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		WebDriver w=new ChromeDriver(options);
+		w.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	
 	 w.get("https://in.via.com/flight-tickets");
 	 w.findElement(By.id("wzrk-cancel")).click();
@@ -33,13 +35,12 @@ public class WaitConcept
 	/* WebDriverWait wt=new WebDriverWait(w,Duration.ofSeconds(30));
 	 wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"cheap_flight_container\"]/div[2]/div/div[1]")));*/
 	
-	 Wait<WebDriver> fluentwt=new FluentWait<WebDriver>(w).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
-	 fluentwt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"cheap_flight_container\"]/div[2]/div/div[1]/div[3]/i")));
-	 
+	/* Wait<WebDriver> fluentwt=new FluentWait<WebDriver>(w).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
+	 fluentwt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"cheap_flight_container\"]/div[2]/div/div[1]/div[3]/i")));*/
 	 WebElement getLowestFlightPrice=w.findElement(By.xpath("//*[@id=\"cheap_flight_container\"]/div[2]/div/div[1]"));
 	 String lowestFlightPrice=getLowestFlightPrice.getText();
 	 System.out.println("Cheapest Flights is:" +lowestFlightPrice);
-	 
+	
 	 
 	 w.quit();
 	 

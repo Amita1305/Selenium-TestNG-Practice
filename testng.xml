@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Suite" verbose="5" parallel="tests" thread-count="2">
+  <test name="Test1">
     <classes>
-      <class name="Com.itview.testcases.practice.Selenium_testing_test_practice.LoginTestCaseAttribute"/>
+      <class name="Com.test.NewTest">
+      <methods>
+       <exclude name="b" />
+      </methods>
+      </class>
+     </classes>
+  </test>
+  <test name="Test2">
+    <classes>
+      <class name="Com.test.NewTest1"/>
+    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

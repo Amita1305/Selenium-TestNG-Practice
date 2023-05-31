@@ -2,11 +2,13 @@ package Com.itview.testcases.practice.Selenium_testing_test_practice;
 
 import org.testng.annotations.Test;
 
+
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
 public class LoginTestCaseAttribute 
@@ -29,7 +31,7 @@ public class LoginTestCaseAttribute
 	  w.findElement(By.id("passw")).sendKeys("admin");
 	  w.findElement(By.name("btnSubmit")).click();
 	  w.findElement(By.linkText("Sign Off")).click();
-	  //Assert.fail();
+	  Assert.fail();
   }
   
   @Test(priority=1, description="Test case to verify tuser credential", dependsOnMethods="LoginAdminTest",groups="LoginModule",invocationCount=3, enabled=true)

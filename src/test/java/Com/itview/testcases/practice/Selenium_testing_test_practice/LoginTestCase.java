@@ -4,12 +4,15 @@ import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class LoginTestCase 
 {
 	public static void main(String[] args) throws Exception
 	{
-		WebDriver w=new ChromeDriver();
+		ChromeOptions co=new ChromeOptions();
+		 co.addArguments("--remote-allow-origins=*");
+		 WebDriver w=new ChromeDriver(co);
 		w.get("http://altoromutual.com:8080/login.jsp");
 		w.findElement(By.id("uid")).sendKeys("admin");
 		w.findElement(By.id("passw")).sendKeys("admin");

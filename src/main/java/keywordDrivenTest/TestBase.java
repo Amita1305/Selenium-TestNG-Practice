@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -18,9 +19,11 @@ public class TestBase
 	{
 		if(browserName.equalsIgnoreCase("Chrome"))
 		{
-				w=new ChromeDriver();
+			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			w=new ChromeDriver(options);
 		}
-		if(browserName.equalsIgnoreCase("Edge"))
+			else if(browserName.equalsIgnoreCase("Edge"))
 		{
 				w=new EdgeDriver();
 		} 

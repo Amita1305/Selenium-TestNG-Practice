@@ -1,10 +1,14 @@
 package Com.itview.testcases.practice.Selenium_testing_test_practice;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 
 public class LoginTestcase_TestNG 
@@ -14,13 +18,15 @@ public class LoginTestcase_TestNG
 	@BeforeTest
 	  public void beforeTest() 
 	{
-		w=new ChromeDriver();
+		ChromeOptions options=new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		w=new ChromeDriver(options);
 	}
 
-  @Test
+  @Test(invocationCount=4,threadPoolSize=2)
   public void LoginTestCase_TestNG_Test()
   {
-	 w.get("http://altoromutual.com:8080/login.jsp");
+	  w.get("http://altoromutual.com:8080/login.jsp");
 	  w.findElement(By.id("uid")).sendKeys("admin");
 	  w.findElement(By.id("passw")).sendKeys("admin");
 	  w.findElement(By.name("btnSubmit")).click();

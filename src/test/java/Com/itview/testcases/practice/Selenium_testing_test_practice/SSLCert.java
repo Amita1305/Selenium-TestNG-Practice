@@ -10,10 +10,10 @@ public class SSLCert
 
 	public static void main(String[] args) 
 	{
-		ChromeOptions options=new ChromeOptions();
-		options.setAcceptInsecureCerts(true);
-		
-		WebDriver w=new ChromeDriver(options);
+		ChromeOptions co=new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+		co.setAcceptInsecureCerts(true);
+		WebDriver w=new ChromeDriver(co);
 		w.get("https://expired.badssl.com/");
 		
 		String pageTitle=w.getTitle();
